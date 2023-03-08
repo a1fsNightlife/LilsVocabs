@@ -1,0 +1,97 @@
+::ng-deep .mat-mdc-card-content {
+    display: flex !important;
+    justify-content: center;
+}
+
+.slider-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.silder {
+    padding-bottom: 0.5rem;
+}
+
+.examination-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.vocab-card {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+button {
+    margin: 1rem;
+    border: 1px solid white;
+}
+
+.card-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.middle-card {
+    background: url(../../../assets/cards/middle_card.png);
+    background-repeat: no-repeat;
+    width: 196px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 409px;
+    color: black;
+    font-size: medium;
+    word-wrap: break-word;
+}
+
+img {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-btn-txt {
+    color: black;
+}
+
+.left-btn {
+    background-image: url(../../../assets/cards/left_btn.png);
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 50px;
+    border: none;
+}
+
+.middle-btn {
+    background-image: url(../../../assets/cards/middle_btn.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.right-btn {
+    background-image: url(../../../assets/cards/right_btn.png);
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 50px;
+    border: none;
+}
+
+.hint {
+    width: 50%;
+}

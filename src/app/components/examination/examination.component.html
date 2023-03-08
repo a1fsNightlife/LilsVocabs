@@ -1,0 +1,70 @@
+<div class="slider-area">
+    <mat-slide-toggle
+            class="silder"
+            [(ngModel)]="isChecked">
+    </mat-slide-toggle>
+    <p>Toggle examination mode</p>
+</div>
+
+<div *ngIf="isChecked" class="examination-area">
+    <mat-card *ngIf="!isRevealed" class="vocab-card">
+        <mat-card-content>
+            <h2>{{randomVocab}}</h2>
+        </mat-card-content>
+    </mat-card>
+    <mat-card *ngIf="isRevealed" class="vocab-card">
+        <mat-card-content>
+            <h2>{{solution}}</h2>
+        </mat-card-content>
+    </mat-card>
+
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>Answer</mat-label>
+            <input matInput [(ngModel)]="pick">
+        </mat-form-field>
+    </div>
+
+    <div *ngIf="!btnClicked" class="hint">
+        
+    </div>
+    <div *ngIf="correct && btnClicked">
+        <h1 style="color: rgb(0, 255, 0);">YEAH CORRECT</h1>
+    </div>
+    <div *ngIf="!correct && btnClicked">
+        <h1 style="color: red;">MEEEEEEEEEEEEEEEEP</h1>
+    </div>
+    
+    <div>
+        <button mat-raised-button (click)="checkExam()">{{buttonTxt}}</button>
+        <button mat-raised-button (click)="revealCard()">SHOW</button>
+    </div>
+</div>
+
+<div *ngIf="!isChecked" class="card-area">
+    <div class="card-btn">
+        <img src="../../../assets/cards/left_card.png" alt="left_card">
+        <button class="left-btn" mat-button (click)="getPreviousVocab()">
+            <span class="side-btn-txt">Previous</span>
+        </button>
+    </div>
+    
+    <div class="middle-card card-btn">
+        <div *ngIf="!isRevealed">
+            {{randomVocab}}
+        </div>
+
+        <div *ngIf="isRevealed">
+            {{solution}}
+        </div>
+        
+        <button class="middle-btn" mat-button (click)="revealCard()">{{revealBtnTxt}}</button>
+    </div>
+    
+    <div class="card-btn">
+        <img src="../../../assets/cards/right_card.png" alt="right_card">
+        <button class="right-btn" mat-button (click)="getNextVocab()">
+            <span class="side-btn-txt">Next</span>
+        </button>
+    </div>
+</div>
