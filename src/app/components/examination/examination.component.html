@@ -42,8 +42,8 @@
 </div>
 
 <div *ngIf="!isChecked" class="card-area">
-    <div class="card-btn">
-        <img src="../../../assets/cards/left_card.png" alt="left_card">
+    <div class="left-card card-btn">
+        <br>
         <button class="left-btn" mat-button (click)="getPreviousVocab()">
             <span class="side-btn-txt">Previous</span>
         </button>
@@ -61,8 +61,8 @@
         <button class="middle-btn" mat-button (click)="revealCard(!isRevealed)">{{revealBtnTxt}}</button>
     </div>
     
-    <div class="card-btn">
-        <img src="../../../assets/cards/right_card.png" alt="right_card">
+    <div class="right-card card-btn">
+        <br>
         <button class="right-btn" mat-button (click)="getNextVocab()">
             <span class="side-btn-txt">Next</span>
         </button>

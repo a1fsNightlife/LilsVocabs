@@ -40,10 +40,36 @@ button {
     justify-content: center;
 }
 
+.left-card {
+    background: url(../../../assets/cards/left_card.png);
+    background-repeat: no-repeat;
+    width: 147px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 409px;
+    color: black;
+    font-size: medium;
+    word-wrap: break-word;
+}
+
 .middle-card {
     background: url(../../../assets/cards/middle_card.png);
     background-repeat: no-repeat;
     width: 196px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 409px;
+    color: black;
+    font-size: medium;
+    word-wrap: break-word;
+}
+
+.right-card {
+    background: url(../../../assets/cards/right_card.png);
+    background-repeat: no-repeat;
+    width: 160px;
 
     text-align: center;
     vertical-align: middle;
