@@ -206,6 +206,7 @@ export class ExaminationComponent {
     } else {
       this.getRandomVocab();
     }
+    this.revealCard(false);
   }
 
   getPreviousVocab() {
@@ -214,6 +215,7 @@ export class ExaminationComponent {
     if(previousVocab != null) {
       this.nextVocabs.unshift(this.currentVocab);
       this.resetVocab(previousVocab);
+      this.revealCard(false);
     }
   }
 
@@ -231,8 +233,8 @@ export class ExaminationComponent {
     }
   }
 
-  revealCard() {
-    this.isRevealed = !this.isRevealed;
+  revealCard(reveal: boolean) {
+    this.isRevealed = reveal;
     if(this.isRevealed) {
       this.revealBtnTxt = 'Hide';
     } else {

@@ -37,7 +37,7 @@
     
     <div>
         <button mat-raised-button (click)="checkExam()">{{buttonTxt}}</button>
-        <button mat-raised-button (click)="revealCard()">SHOW</button>
+        <button mat-raised-button (click)="revealCard(!isRevealed)">SHOW</button>
     </div>
 </div>
 
@@ -58,7 +58,7 @@
             {{solution}}
         </div>
         
-        <button class="middle-btn" mat-button (click)="revealCard()">{{revealBtnTxt}}</button>
+        <button class="middle-btn" mat-button (click)="revealCard(!isRevealed)">{{revealBtnTxt}}</button>
     </div>
     
     <div class="card-btn">
