@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExaminationComponent } from './components/examination/examination.component';
 
 const routes: Routes = [
-  { path: '**', redirectTo: '/' },
-  { path: '', component: ExaminationComponent }
+  { path: '**', component: ExaminationComponent }
 ];
 
 @NgModule({
