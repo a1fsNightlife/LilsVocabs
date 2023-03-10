@@ -50,12 +50,12 @@
     </div>
     
     <div class="middle-card card-btn">
-        <div *ngIf="!isRevealed">
-            {{randomVocab}}
+        <div *ngIf="!isRevealed" class="vocab-underline">
+            <u>{{randomVocab}}</u>
         </div>
 
-        <div *ngIf="isRevealed">
-            {{solution}}
+        <div *ngIf="isRevealed" class="vocab-underline">
+            <u>{{solution}}</u>
         </div>
         
         <button class="middle-btn" mat-button (click)="revealCard(!isRevealed)">{{revealBtnTxt}}</button>

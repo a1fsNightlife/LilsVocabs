@@ -1,0 +1,14 @@
+.bg {
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-image: url(../assets/logo-bg/logo_bg_2.png);
+    background-size: cover;
+}
+
+.components {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
